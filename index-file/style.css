@@ -68,6 +68,9 @@ body{
     color:rgb(255, 84, 0);
 }
 
+.humberger-icons{
+display: none;
+}
 
 /* ////////////////////////////// */
 
@@ -115,6 +118,7 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
+flex-wrap: wrap;
 gap: 30px;
 background-color: #ffffff4e;
 backdrop-filter: blur(1px);
@@ -449,9 +453,8 @@ font-weight: 500;
     color: rgb(255, 84, 0);
     font-size: 16px;
     margin-right: 10px;
-   
-    
     }
+
 .discount-card h3{
  color: var(--h-color);
  font-size: var(--card-item-font-size);
@@ -580,7 +583,7 @@ margin:0 auto;
     padding:50px 130px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap:40px;
 }
 
@@ -641,25 +644,27 @@ input:focus{
 
     .newsletter-img-wrap{
         width:55%;
-        margin-top: 40px;
-        overflow: hidden;
-    }
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: end;}
     .newsletter-img-wrap img{
         width:100%;
+        height:100%;
     }
     
     .saving{
-        position: relative;
-        padding: 15px  20px ;
-        width:250px ;
+        padding: 15px  10px ;
+        width: 250px;
         height:100px;
         background: rgb(255, 84, 0);
-        left: 266px;
-        top: -146px;
         transform: rotate(-21deg);
         text-align: center;
+        align-content: center;
         border-radius: 16px;
-
+        margin-top: -140px;
+        margin-right: 10px;
 
     }
 
@@ -674,4 +679,71 @@ font-weight: 400;
     font-weight: 800;
  
  }
+/* //////////////////////////////// */
+
+.travels-footer{
+    padding:80px 130px;
+       background-color: #f3f3f3;
+}
+ .travels-foot-container{
+      width:70%;
+      margin:0 auto;
+ }
+
+ .footer-travels-logo1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+   
+   }
+
+   .footer-travels-logo1 h3{
+    font-size: var(--top-title-font-size);
+    color: var(--h-color);
+}
+
+.footer-travels-logo1 span{
+    color:rgb(255, 84, 0);
+}
+
+
+.travels-foot-container p{
+    text-align: center;
+    margin:20px 0 20px;
+    line-height: 25px;
+    font-size: var(--paragraph-font-size);
+    color: var(--p-color);
     
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    margin:40px 0 10px;
+    
+}
+
+.footer-icons>i{
+    color:#5d5d5d;
+
+}
+
+.bottom-footer
+{ 
+text-align: center;
+align-content: center;
+border-top: 1px solid rgb(135, 135, 135,0.8);
+padding-top:40px;
+
+}
+
+.bottom-footer span{
+    color:#2d2d2d;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    
+}
